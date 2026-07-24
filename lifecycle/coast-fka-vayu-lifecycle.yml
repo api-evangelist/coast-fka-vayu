@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.coastpay.com/
+versioning:
+  scheme: uri-path
+  current: v2
+  evidence: API reference published at docs.coastpay.com/openapi/v2/coast-api and
+    API base https://api.coastpay.com/v2
+status_page:
+  url: https://status.coastpay.com/
+  provider: Atlassian Statuspage
+  components:
+  - {name: Authorizations, status: operational}
+  - {name: Management Portal, status: operational}
+  - {name: Mobile App, status: operational}
+  - {name: Texting Service, status: operational}
+  - {name: API, status: operational}
+  feeds:
+  - https://status.coastpay.com/history.atom
+  - https://status.coastpay.com/history.rss
+deprecation:
+  policy_url: null
+  note: No public deprecation/sunset policy found (API reference is gated behind
+    OIDC login).
+sla:
+  url: null

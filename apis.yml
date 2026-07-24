@@ -1,8 +1,14 @@
 aid: coast-fka-vayu
 name: Coast (FKA VayU)
-description: 'Coast (FKA VayU) is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: payments. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Coast (formerly VayU) is a US financial-technology company that consolidates
+  fuel cards, fleet and field cards, corporate cards, expense management, and bill
+  pay onto a single platform for fleet-based and field-service businesses across HVAC,
+  construction, transportation, and landscaping. Coast pairs Visa card issuing with
+  spend controls, fraud prevention, rewards, and real-time reporting, and integrates
+  with telematics (Samsara, Geotab, Verizon Connect), fleet management (Fleetio, Whip
+  Around), and accounting (QuickBooks, NetSuite, Sage Intacct) systems. Coast exposes
+  a v2 REST API and an embedded-widget SDK through a Kong-hosted developer portal.
+  Backed by ICONIQ Growth, Accel, Insight Partners, and Bessemer Venture Partners.'
 url: https://raw.githubusercontent.com/api-evangelist/coast-fka-vayu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +16,97 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://coastpay.com/og.png
 tags:
 - Company
 - Payments
-apis: []
+- Fleet Cards
+- Fuel Cards
+- Corporate Cards
+- Expense Management
+- Fintech
+- Bill Pay
+apis:
+- name: Coast API v2
+  description: Coast's v2 REST API for programmatically managing fuel/fleet cards,
+    corporate cards, spend controls, transactions, and expense data. Documented via
+    a Redocly reference and a Kong developer portal; access is gated behind OIDC login.
+  humanURL: https://developers.coastpay.com/
+  baseURL: https://api.coastpay.com/v2
+  properties:
+  - type: Documentation
+    url: https://docs.coastpay.com/
+  - type: APIReference
+    url: https://docs.coastpay.com/openapi/v2/coast-api
+  - type: DeveloperPortal
+    url: https://developers.coastpay.com/
+  tags:
+  - Payments
+  - Fleet Cards
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/coast-fka-vayu-domain-security.yml
 - type: Website
   url: https://coastpay.com/
+- type: DeveloperPortal
+  url: https://developers.coastpay.com/
+- type: Documentation
+  url: https://docs.coastpay.com/
+- type: APIReference
+  url: https://docs.coastpay.com/openapi/v2/coast-api
+- type: Pricing
+  url: https://coastpay.com/pricing/
+- type: SignUp
+  url: https://portal.coastpay.com/auth
+- type: Login
+  url: https://portal.coastpay.com/auth
+- type: Support
+  url: https://coastpay.com/customer-service/
+- type: HelpCenter
+  url: https://coastpay.com/faqs/
+- type: Blog
+  url: https://coastpay.com/resources/blog/
+- type: TermsOfService
+  url: https://coastpay.com/legal/terms-of-use/
+- type: PrivacyPolicy
+  url: https://coastpay.com/legal/privacy-policy/
+- type: StatusPage
+  url: https://status.coastpay.com/
+- type: Lifecycle
+  url: lifecycle/coast-fka-vayu-lifecycle.yml
+- type: Integrations
+  url: https://coastpay.com/integrations/
+- type: Packages
+  url: packages/coast-fka-vayu-packages.yml
+- type: SDKs
+  url: packages/coast-fka-vayu-packages.yml
+- type: Components
+  url: components/coast-fka-vayu-components.yml
+- type: WellKnown
+  url: well-known/coast-fka-vayu-well-known.yml
+- type: LLMsTxt
+  url: llms/coast-fka-vayu-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

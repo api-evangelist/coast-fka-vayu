@@ -1,0 +1,13 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@coastpay/embedded-widget-sdk
+packages:
+- language: javascript
+  registry: npm
+  name: "@coastpay/embedded-widget-sdk"
+  version: 0.8.2
+  description: Embedded widget SDK for Coast
+  url: https://www.npmjs.com/package/@coastpay/embedded-widget-sdk
+  install: npm install @coastpay/embedded-widget-sdk
+  homepage: https://coastpay.com
+  official: true

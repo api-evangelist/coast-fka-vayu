@@ -1,0 +1,28 @@
+# Coast (FKA VayU)
+
+> Coast (formerly VayU) is a US fintech that consolidates fuel cards, fleet and field cards, corporate cards, expense management, and bill pay onto one platform for fleet-based and field-service businesses. Coast exposes a v2 REST API and an embedded-widget SDK through a Kong-hosted developer portal (access gated behind OIDC login).
+
+## APIs
+
+- [Coast API v2](https://developers.coastpay.com/): v2 REST API for fuel/fleet cards, corporate cards, spend controls, transactions, and expense data. Base URL https://api.coastpay.com/v2.
+
+## Docs
+
+- [Developer Portal](https://developers.coastpay.com/): Kong-hosted developer portal (OIDC login required).
+- [API Reference](https://docs.coastpay.com/openapi/v2/coast-api): Redocly-hosted OpenAPI reference for the Coast v2 API (login required).
+- [Documentation](https://docs.coastpay.com/): Coast API documentation home.
+- [Integrations](https://coastpay.com/integrations/): Prebuilt telematics, fleet-management, and accounting integrations (Samsara, Geotab, Verizon Connect, Fleetio, QuickBooks, NetSuite, Sage Intacct, and more).
+- [Help Center / FAQs](https://coastpay.com/faqs/)
+- [Blog](https://coastpay.com/resources/blog/)
+- [Status](https://status.coastpay.com/): Atlassian Statuspage covering Authorizations, Management Portal, Mobile App, Texting Service, and API.
+
+## Packages
+
+- [@coastpay/embedded-widget-sdk](https://www.npmjs.com/package/@coastpay/embedded-widget-sdk): Official JavaScript embedded-widget SDK for Coast (npm).
+
+## Commercial
+
+- [Pricing](https://coastpay.com/pricing/)
+- [Sign Up / Log In](https://portal.coastpay.com/auth)
+- [Terms of Use](https://coastpay.com/legal/terms-of-use/)
+- [Privacy Policy](https://coastpay.com/legal/privacy-policy/)

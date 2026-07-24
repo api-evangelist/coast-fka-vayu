@@ -1,0 +1,13 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@coastpay/embedded-widget-sdk
+families:
+- family: Embedded Widget
+  description: Coast's client-side embeddable widget surface, distributed as a
+    JavaScript SDK for embedding Coast experiences inside partner and customer
+    applications.
+  loader: "@coastpay/embedded-widget-sdk"
+  registry: npm
+  version: 0.8.2
+  url: https://www.npmjs.com/package/@coastpay/embedded-widget-sdk
+  official: true

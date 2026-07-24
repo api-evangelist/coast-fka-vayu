@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: probed
+note: >-
+  Probed the /.well-known/ discovery surface on the website and API hosts. No
+  real discovery documents were found. On developers.coastpay.com the paths
+  return HTTP 200 but serve the Kong developer-portal SPA shell (not a real
+  well-known document), so they are recorded as none.
+hosts:
+- host: https://coastpay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://api.coastpay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+- host: https://developers.coastpay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 200, result: spa-shell-not-a-document}
+  - {path: /.well-known/openid-configuration, status: 200, result: spa-shell-not-a-document}
+- host: https://docs.coastpay.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
