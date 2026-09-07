@@ -121,3 +121,5 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: coast
+x-relationship: product
